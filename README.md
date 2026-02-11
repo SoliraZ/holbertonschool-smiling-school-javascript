@@ -32,6 +32,12 @@ The designs were planned for Desktop, Tablet, and Mobile.
 
 The Holberton Smiling School web pages were developed by sections using the Bootstrap Front-End framework and CSS styles.
 
+## Interactions
+
+- Web pages switch to the **tablet layout at 768px** width.
+- Web pages switch to the **mobile layout at 576px** width.
+- All **buttons** have `hover` and `active` states with **opacity: 0.9**.
+
 ## CSS File
 
 [Styles](https://github.com/jzamora5/holberton-smiling-school/blob/master/styles.css)
