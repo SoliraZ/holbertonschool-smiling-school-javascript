@@ -1,395 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>holberton-smiling</title>
-    <!-- Custom and Font Styles  -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="style-de-police.css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>holberton-smiling</title>
+  <!-- Custom and Font Styles  -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="font-style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body class="body">
-    <header class="header courses-header">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body class="body">
+  <header class="header courses-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
+        <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-line1"></span>
+          <span class="navbar-line2 my-1"></span>
+          <span class="navbar-line3"></span>
+        </button>
+        <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="homepage.html">
+          <img src="images/smile_off.png" alt="navbar-logo" width="37px" class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid" />
+          <img src="images/logo.png" alt="navbar-logo-text" width="114px" class="mr-4 img-fluid" />
+        </a>
+        <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
+          <ul class="navbar-nav ml-auto font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link text-white px-1" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+              <a class="nav-link text-white px-1" href="pricing.html">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-1" href="#">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="hero text-center text-white d-none d-sm-block">
+        <h1 class="my-0">
+          « Don't cry because it's over.<br /><span class="main-color">Smile</span>
+          because it happened. »
+        </h1>
+      </section>
+    </div>
+  </header>
+  <main>
+    <section class="section search">
       <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
-          <button
-            class="navbar-toggler border-0 align-self-start mt-3"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-line1"></span>
-            <span class="navbar-line2 my-1"></span>
-            <span class="navbar-line3"></span>
-          </button>
-          <a
-            class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3"
-            href="homepage.html"
-          >
-            <img
-              src="images/smile_off.png"
-              alt="navbar-logo"
-              width="37px"
-              class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid"
-            />
-            <img
-              src="images/logo.png"
-              alt="navbar-logo-text"
-              width="114px"
-              class="mr-4 img-fluid"
-            />
-          </a>
-          <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
-            <ul class="navbar-nav ml-auto font-weight-bold">
-              <li class="nav-item">
-                <a class="nav-link text-white px-1" href="courses.html"
-                  >COURSES</a
-                >
+        <div class="row py-4">
+          <div class="col-12 col-sm-12 col-lg-4 box1">
+            <span class="text-white font-weight-bold drop-down-title">KEYWORDS</span>
+
+            <div class="input-group mb-sm-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text holberton_school-icon-search_1"></span>
+              </div>
+              <input type="text" id="searchKeywords" class="form-control search-text-area" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default" placeholder="Search by keywords" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 box2">
+            <span class="text-white font-weight-bold drop-down-title">TOPIC</span>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle text-left" href="#" role="button" id="topicDropdown" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span id="topicSelected">All</span>
+              </a>
+
+              <div class="dropdown-menu mt-0" id="topicMenu" aria-labelledby="topicDropdown">
+                <!-- Topics will be populated dynamically -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 box3">
+            <span class="text-white font-weight-bold drop-down-title">SORT BY</span>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle text-left" href="#" role="button" id="sortDropdown" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span id="sortSelected">Sort by</span>
+              </a>
+
+              <div class="dropdown-menu mt-0" id="sortMenu" aria-labelledby="sortDropdown">
+                <!-- Sort options will be populated dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section results">
+      <div class="container">
+        <div class="section-title">
+          <span class="text-muted video-count" id="videoCount">Loading...</span>
+        </div>
+        <div class="row" id="coursesContainer">
+          <!-- Loader will be shown during AJAX requests -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row d-flex align-items-center flex-column flex-sm-row">
+        <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
+          <div class="footer-logo">
+            <img src="images/smile_off.png" alt="navbar-logo" width="37px"
+              class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid" />
+            <img src="images/logo.png" alt="navbar-logo-text" width="114px" class="mr-4 img-fluid" />
+          </div>
+        </div>
+        <div class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item">
+          <div class="trademark text-muted">
+            <span>©smileschool 2020</span>
+          </div>
+        </div>
+        <div
+          class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end footer-item">
+          <div class="social">
+            <ul class="social nav">
+              <li class="social-item facebook-icon">
+                <a href="https://www.facebook.com/HolbertonSchool/" class="social-link" aria-label="Facebook"><span
+                    class="holberton_school-icon-ic_facebook"></span></a>
               </li>
-              <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
-                <a class="nav-link text-white px-1" href="pricing.html"
-                  >PRICING</a
-                >
+              <li class="social-item twitter-icon">
+                <a href="https://twitter.com/holbertonschool" class="social-link" aria-label="Twitter"><span
+                    class="holberton_school-icon-ic_twitter"></span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white px-1" href="#">LOGIN</a>
+              <li class="social-item instagram-icon">
+                <a href="https://www.instagram.com/holbertonschool/" class="social-link" aria-label="Instagram"><span
+                    class="holberton_school-icon-ic_instagram"></span></a>
               </li>
             </ul>
           </div>
-        </nav>
-
-        <section class="hero text-center text-white d-none d-sm-block">
-          <h1 class="my-0">
-            « Don't cry because it's over.<br /><span class="main-color"
-              >Smile</span
-            >
-            because it happened. »
-          </h1>
-        </section>
-      </div>
-    </header>
-    <main>
-      <section class="section search">
-        <div class="container">
-          <div class="row py-4">
-            <div class="col-12 col-sm-12 col-lg-4 box1">
-              <span class="text-white font-weight-bold drop-down-title"
-                >KEYWORDS</span
-              >
-
-              <div class="input-group mb-sm-4">
-                <div class="input-group-prepend">
-                  <span
-                    class="input-group-text holberton_school-icon-search_1"
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="searchKeywords"
-                  class="form-control search-text-area"
-                  aria-label="Default"
-                  aria-describedby="inputGroup-sizing-default"
-                  placeholder="Search by keywords"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 box2">
-              <span class="text-white font-weight-bold drop-down-title"
-                >TOPIC</span
-              >
-              <div class="dropdown">
-                <a
-                  class="btn dropdown-toggle text-left"
-                  href="#"
-                  role="button"
-                  id="topicDropdown"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span id="topicSelected">All</span>
-                </a>
-
-                <div
-                  class="dropdown-menu mt-0"
-                  id="topicMenu"
-                  aria-labelledby="topicDropdown"
-                >
-                  <!-- Topics will be populated dynamically -->
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 box3">
-              <span class="text-white font-weight-bold drop-down-title"
-                >SORT BY</span
-              >
-              <div class="dropdown">
-                <a
-                  class="btn dropdown-toggle text-left"
-                  href="#"
-                  role="button"
-                  id="sortDropdown"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span id="sortSelected">Sort by</span>
-                </a>
-
-                <div
-                  class="dropdown-menu mt-0"
-                  id="sortMenu"
-                  aria-labelledby="sortDropdown"
-                >
-                  <!-- Sort options will be populated dynamically -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section results">
-        <div class="container">
-          <div class="section-title">
-            <span class="text-muted video-count" id="videoCount">Loading...</span>
-          </div>
-          <div class="row" id="coursesContainer">
-            <!-- Loader will be shown during AJAX requests -->
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer d-flex align-items-center justify-content-center">
-      <div class="container">
-        <div class="row d-flex align-items-center flex-column flex-sm-row">
-          <div
-            class="col footer-item d-flex justify-content-center justify-content-sm-start"
-          >
-            <div class="footer-logo">
-              <img
-                src="images/smile_off.png"
-                alt="navbar-logo"
-                width="37px"
-                class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid"
-              />
-              <img
-                src="images/logo.png"
-                alt="navbar-logo-text"
-                width="114px"
-                class="mr-4 img-fluid"
-              />
-            </div>
-          </div>
-          <div
-            class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item"
-          >
-            <div class="trademark text-muted">
-              <span>©smileschool 2020</span>
-            </div>
-          </div>
-          <div
-            class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end footer-item"
-          >
-            <div class="social">
-              <ul class="social nav">
-                <li class="social-item facebook-icon">
-                  <a
-                    href="https://www.facebook.com/HolbertonSchool/"
-                    class="social-link"
-                    aria-label="Facebook"
-                    ><span class="holberton_school-icon-ic_facebook"></span
-                  ></a>
-                </li>
-                <li class="social-item twitter-icon">
-                  <a
-                    href="https://twitter.com/holbertonschool"
-                    class="social-link"
-                    aria-label="Twitter"
-                    ><span class="holberton_school-icon-ic_twitter"></span
-                  ></a>
-                </li>
-                <li class="social-item instagram-icon">
-                  <a
-                    href="https://www.instagram.com/holbertonschool/"
-                    class="social-link"
-                    aria-label="Instagram"
-                    ><span class="holberton_school-icon-ic_instagram"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
-    </footer>
-    <script>
-      $(document).ready(function() {
-        // Variables to store current filter values
-        let currentSearch = '';
-        let currentTopic = '';
-        let currentSort = '';
-        
-        // Function to load courses from API
-        function loadCourses() {
-          // Show loader
-          showLoader();
-          
-          // Build API URL with parameters
-          const apiUrl = 'https://smileschool-api.hbtn.info/courses';
-          const params = new URLSearchParams();
-          
-          if (currentSearch) params.append('q', currentSearch);
-          if (currentTopic) params.append('topic', currentTopic);
-          if (currentSort) params.append('sort', currentSort);
-          
-          const fullUrl = params.toString() ? `${apiUrl}?${params.toString()}` : apiUrl;
-          
-          // Make AJAX request
-          $.ajax({
-            url: fullUrl,
-            method: 'GET',
-            dataType: 'json',
-            success: function(data) {
-              // Initialize search field with q value from API response
-              if (data.q !== undefined && data.q !== currentSearch) {
-                currentSearch = data.q;
-                $('#searchKeywords').val(data.q);
-              }
-              
-              // Populate topic dropdown if not already populated
-              if ($('#topicMenu .dropdown-item').length === 0 && data.topics) {
-                populateDropdown('#topicMenu', data.topics, '#topicSelected', 'topic');
-              }
-              
-              // Populate sort dropdown if not already populated
-              if ($('#sortMenu .dropdown-item').length === 0 && data.sorts) {
-                populateDropdown('#sortMenu', data.sorts, '#sortSelected', 'sort');
-              }
-              
-              // Update video count
-              const videoCount = data.courses ? data.courses.length : 0;
-              $('#videoCount').text(`${videoCount} video${videoCount !== 1 ? 's' : ''}`);
-              
-              // Hide loader and display video cards
-              hideLoader();
-              
-              // Create video cards
-              if (data.courses && data.courses.length > 0) {
-                data.courses.forEach(function(course) {
-                  const videoCard = createVideoCard(course);
-                  $('#coursesContainer').append(videoCard);
-                });
-              } else {
-                $('#coursesContainer').append('<div class="col-12 text-center"><p class="text-muted">No courses found</p></div>');
-              }
-            },
-            error: function(xhr, status, error) {
-              hideLoader();
-              $('#coursesContainer').append('<div class="col-12 text-center"><p class="text-danger">Error loading courses. Please try again later.</p></div>');
+    </div>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      // Variables to store current filter values
+      let currentSearch = '';
+      let currentTopic = '';
+      let currentSort = '';
+
+      // Function to load courses from API
+      function loadCourses() {
+        // Show loader
+        showLoader();
+
+        // Build API URL with parameters
+        const apiUrl = 'https://smileschool-api.hbtn.info/courses';
+        const params = new URLSearchParams();
+
+        if (currentSearch) params.append('q', currentSearch);
+        if (currentTopic) params.append('topic', currentTopic);
+        if (currentSort) params.append('sort', currentSort);
+
+        const fullUrl = params.toString() ? `${apiUrl}?${params.toString()}` : apiUrl;
+
+        // Make AJAX request
+        $.ajax({
+          url: fullUrl,
+          method: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Initialize search field with q value from API response
+            if (data.q !== undefined && data.q !== currentSearch) {
+              currentSearch = data.q;
+              $('#searchKeywords').val(data.q);
             }
-          });
-        }
-        
-        // Function to show loader
-        function showLoader() {
-          $('#coursesContainer').html(`
+
+            // Populate topic dropdown if not already populated
+            if ($('#topicMenu .dropdown-item').length === 0 && data.topics) {
+              populateDropdown('#topicMenu', data.topics, '#topicSelected', 'topic');
+            }
+
+            // Populate sort dropdown if not already populated
+            if ($('#sortMenu .dropdown-item').length === 0 && data.sorts) {
+              populateDropdown('#sortMenu', data.sorts, '#sortSelected', 'sort');
+            }
+
+            // Update video count
+            const videoCount = data.courses ? data.courses.length : 0;
+            $('#videoCount').text(`${videoCount} video${videoCount !== 1 ? 's' : ''}`);
+
+            // Hide loader and display video cards
+            hideLoader();
+
+            // Create video cards
+            if (data.courses && data.courses.length > 0) {
+              data.courses.forEach(function (course) {
+                const videoCard = createVideoCard(course);
+                $('#coursesContainer').append(videoCard);
+              });
+            } else {
+              $('#coursesContainer').append('<div class="col-12 text-center"><p class="text-muted">No courses found</p></div>');
+            }
+          },
+          error: function (xhr, status, error) {
+            hideLoader();
+            $('#coursesContainer').append('<div class="col-12 text-center"><p class="text-danger">Error loading courses. Please try again later.</p></div>');
+          }
+        });
+      }
+
+      // Function to show loader
+      function showLoader() {
+        $('#coursesContainer').html(`
             <div class="col-12 d-flex justify-content-center align-items-center" style="height: 200px;">
               <div class="spinner-border text-primary" role="status">
                 <span class="sr-only">Loading...</span>
               </div>
             </div>
           `);
-        }
-        
-        // Function to hide loader
-        function hideLoader() {
-          $('#coursesContainer').empty();
-        }
-        
-        // Function to populate dropdown menus
-        function populateDropdown(menuId, items, selectedId, type) {
-          const $menu = $(menuId);
-          $menu.empty();
-          
-          // Add "All" option for topic
-          if (type === 'topic') {
-            const allItem = $('<a class="dropdown-item" href="#" data-value="">All</a>');
-            allItem.on('click', function(e) {
-              e.preventDefault();
-              currentTopic = '';
-              $(selectedId).text('All');
-              loadCourses();
-            });
-            $menu.append(allItem);
-          }
-          
-          items.forEach(function(item) {
-            const dropdownItem = $(`<a class="dropdown-item" href="#" data-value="${item}">${item}</a>`);
-            dropdownItem.on('click', function(e) {
-              e.preventDefault();
-              const value = $(this).data('value');
-              
-              if (type === 'topic') {
-                currentTopic = value;
-              } else if (type === 'sort') {
-                currentSort = value;
-              }
-              
-              $(selectedId).text(item);
-              loadCourses();
-            });
-            $menu.append(dropdownItem);
+      }
+
+      // Function to hide loader
+      function hideLoader() {
+        $('#coursesContainer').empty();
+      }
+
+      // Function to populate dropdown menus
+      function populateDropdown(menuId, items, selectedId, type) {
+        const $menu = $(menuId);
+        $menu.empty();
+
+        // Add "All" option for topic
+        if (type === 'topic') {
+          const allItem = $('<a class="dropdown-item" href="#" data-value="">All</a>');
+          allItem.on('click', function (e) {
+            e.preventDefault();
+            currentTopic = '';
+            $(selectedId).text('All');
+            loadCourses();
           });
+          $menu.append(allItem);
         }
-        
-        // Function to create a video card
-        function createVideoCard(course) {
-          // Create star rating HTML
-          let starsHtml = '';
-          for (let i = 1; i <= 5; i++) {
-            const starImg = i <= course.star ? 'star_on.png' : 'star_off.png';
-            starsHtml += `<img src="images/${starImg}" alt="star ${i <= course.star ? 'on' : 'off'}" width="15px" />`;
-          }
-          
-          const card = `
+
+        items.forEach(function (item) {
+          const dropdownItem = $(`<a class="dropdown-item" href="#" data-value="${item}">${item}</a>`);
+          dropdownItem.on('click', function (e) {
+            e.preventDefault();
+            const value = $(this).data('value');
+
+            if (type === 'topic') {
+              currentTopic = value;
+            } else if (type === 'sort') {
+              currentSort = value;
+            }
+
+            $(selectedId).text(item);
+            loadCourses();
+          });
+          $menu.append(dropdownItem);
+        });
+      }
+
+      // Function to create a video card
+      function createVideoCard(course) {
+        // Create star rating HTML
+        let starsHtml = '';
+        for (let i = 1; i <= 5; i++) {
+          const starImg = i <= course.star ? 'star_on.png' : 'star_off.png';
+          starsHtml += `<img src="images/${starImg}" alt="star ${i <= course.star ? 'on' : 'off'}" width="15px" />`;
+        }
+
+        const card = `
             <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
               <div class="card">
                 <img
@@ -429,23 +326,24 @@
               </div>
             </div>
           `;
-          
-          return card;
-        }
-        
-        // Event listener for search input - API request when search value changes
-        let searchTimeout;
-        $('#searchKeywords').on('input', function() {
-          clearTimeout(searchTimeout);
-          searchTimeout = setTimeout(function() {
-            currentSearch = $('#searchKeywords').val();
-            loadCourses();
-          }, 500); // Debounce for 500ms
-        });
-        
-        // Load courses on page load
-        loadCourses();
+
+        return card;
+      }
+
+      // Event listener for search input - API request when search value changes
+      let searchTimeout;
+      $('#searchKeywords').on('input', function () {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(function () {
+          currentSearch = $('#searchKeywords').val();
+          loadCourses();
+        }, 500); // Debounce for 500ms
       });
-    </script>
-  </body>
+
+      // Load courses on page load
+      loadCourses();
+    });
+  </script>
+</body>
+
 </html>
