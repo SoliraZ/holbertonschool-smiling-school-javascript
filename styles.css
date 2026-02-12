@@ -222,25 +222,6 @@
   font-size: 22px;
 }
 
-.loader {
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #c271ff;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .carousel-control-prev img,
 .carousel-control-next img {
   width: 30px;
@@ -299,6 +280,22 @@
     padding: 0px;
     padding-top: 24px;
   }
+}
+
+/* Loader Styles */
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* POPULAR SECTION  */
